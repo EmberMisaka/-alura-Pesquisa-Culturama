@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="ptBr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF8">
+    <meta name="viewport" content="width=deviceWidth, initialScale=1.0">
     <title>Pesquisa Culturama</title>
 </head>
 <body>
@@ -12,7 +12,7 @@
     <section>
         <form action="" method="get">
             <fieldset>
-                <!-- DADOS PESSOAIS -->
+                <! DADOS PESSOAIS >
                 <label for="userName">Nome</label>
                 <input type="text" name="userName" required>
                 <br>
@@ -26,7 +26,7 @@
                 <input type="email" name="userEmail" required>
                 <br>
                 <label for="userPhoneNumber">Telefone</label>
-                <input type="tel" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="DDD + número sem espaços ou hifen">
+                <input type="tel" name="userPhoneNumber" pattern="[09]{11}" placeholder="DDD + número sem espaços ou hifen">
                 <br>
                 <label for="userImage">Upload de foto</label>
                 <input type="file" accept="image/*" name="userImage">
@@ -54,7 +54,7 @@
                 </select>
 
                 <label for="userState">Estado:</label>
-                <select name="userState">
+                <select name="userState" required>
                     <option value="Acre">Acre</option>
                     <option value="Alagoas">Alagoas</option>
                     <option value="Amapá">Amapá</option>
@@ -83,8 +83,11 @@
                     <option value="Sergipe">Sergipe</option>
                     <option value="Tocantins">Tocantins</option>
                 </select>
+
             </fieldset>
+
         </form>
+
     </section>
 </body>
 </html>
